@@ -50,9 +50,7 @@ int main()
 //method 4
 int main() 
 {
-    char c;
-    char word[100];
-    char sentence[100];
+    char c,word[100],sentence[100];
     scanf("%c\n%s\n %[^\n]",&c,word,sentence);
     printf("%c\n%s\n%s", c, word, sentence);
     return 0;

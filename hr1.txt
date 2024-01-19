@@ -1,0 +1,11 @@
+" %[^\n]":
+
+This format specifier is used to read a string (sequence of characters) until a newline character (\n) is encountered.
+It stops reading as soon as it encounters a newline character and leaves the newline character in the input buffer.
+Example: scanf(" %[^\n]", str);
+
+" %[^\n]%*c":
+
+This format specifier is used to read a string until a newline character is encountered and then consumes the newline character using %*c.
+It reads characters until a newline character is encountered, and then the %*c part consumes the newline character, preventing it from being left in the input buffer.
+Example: scanf(" %[^\n]%*c", str);
