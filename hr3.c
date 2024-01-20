@@ -27,3 +27,17 @@ int max_of_four(int a,int b,int c,int d)
 method 3
 use if else statements
 */
+/*
+#include <stdio.h>
+# define max_of_four(a,b,c,d) (a>b?a>c?a>d?a:d:c>d?c:d:b>c?b>d?b:d:c>d?c:d)
+
+int main() 
+{
+    int a, b, c, d;
+    scanf("%d %d %d %d", &a, &b, &c, &d);
+    int ans = max_of_four(a, b, c, d);
+    printf("max no. is %d\n", ans);
+    
+    return 0;
+}
+*/
