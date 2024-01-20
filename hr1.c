@@ -26,7 +26,7 @@ int main()
     char sentence[100];
     scanf("%c",&c);  
     scanf("%s",word);
-    scanf(" %[^\n]%*c",sentence);  //ensure space before the %[...]%*c
+    scanf(" %[^\n]%*c",sentence);  //ensure space before the %[...]%*c  //%*c just consumes the \n that we enter after completion of input
     printf("%c\n%s\n%s", c, word, sentence);
     return 0;
 }
