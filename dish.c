@@ -78,12 +78,12 @@ void sort(int* arr,int len)
 {
     int temp =0;
     for(int i=0;i<len;i++){
-        for(int j=0;j<len;j++){
-            if(arr[i] < arr[j])
+        for(int j=0;j<len-1;j++){
+            if(arr[j] > arr[j+1])
             {
-                temp = arr[i];
-                arr[i]= arr[j];
-                arr[j]=temp;
+                temp = arr[j];
+                arr[j]= arr[j+1];
+                arr[j+1]=temp;
             }
         }
     }
